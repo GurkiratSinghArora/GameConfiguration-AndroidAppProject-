@@ -33,7 +33,6 @@ public class Game {
     public int getImageNumber() {
         return imageNumber;
     }
-
     private int imageNumber;
     public void setImageNumber(int imageNumber) {
         this.imageNumber=imageNumber;
