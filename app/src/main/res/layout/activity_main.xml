@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <ListView-->
+<!--        android:id="@+id/listview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="701dp"-->
+<!--        android:layout_above="@+id/floatingBtn"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="2dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:layout_marginEnd="-2dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:visibility="invisible"-->
+<!--        tools:visibility="gone">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            android:layout_width="347dp"-->
+<!--            android:layout_height="379dp"-->
+<!--            android:layout_marginEnd="64dp"-->
+<!--            android:layout_marginBottom="296dp"-->
+<!--            app:srcCompat="@drawable/p1" />-->
+<!--    </ListView>-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/floatingBtn"-->
+<!--        android:layout_width="86dp"-->
+<!--        android:layout_height="116dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="19dp"-->
+<!--        android:layout_marginBottom="27dp"-->
+<!--        android:clickable="true"-->
+<!--        android:contentDescription="@string/app_name"-->
+<!--        app:srcCompat="@drawable/plus_button" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="292dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_below="@+id/listview"-->
+<!--        android:layout_marginTop="640dp"-->
+<!--        android:layout_marginEnd="54dp"-->
+<!--        android:layout_toStartOf="@+id/floatingBtn"-->
+<!--        android:text="Features selected to implement: Nothing"-->
+<!--        android:textSize="20sp" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="413dp"
+        android:layout_height="541dp"
+        android:layout_above="@+id/floatingBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/floatingBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="invisible">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBtn"
+        android:layout_width="58dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/plus_button" />
+
+    <ImageView
+        android:id="@+id/DiceImage"
+        android:layout_width="347dp"
+        android:layout_height="379dp"
+        app:layout_constraintBottom_toBottomOf="@+id/listview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/listview"
+        android:layout_toStartOf="@+id/floatingBtn"
+        android:text="Features selected to implement: Nothing"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/floatingBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="337dp"
+        android:layout_height="63dp"
+        android:text="Hi there!! Click on the + button to add games!!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/DiceImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

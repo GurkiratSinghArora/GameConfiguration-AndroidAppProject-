@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_save"
+        android:title="SAVE" android:height= "24dp" android:tint = "#FDFDFD"
+        android:viewportWidth ="24"
+        android:width ="24dp"
+        app:showAsAction="always"/>
+</menu>
