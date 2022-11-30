@@ -161,6 +161,7 @@ public class MainActivity2 extends AppCompatActivity {
                 return true;
             case android.R.id.home:
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+
                 builder1.setMessage("Do you want to discard your changes?").setTitle("Discard Changes").setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -172,8 +173,9 @@ public class MainActivity2 extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 //TODO - Click "No" does not function right now. Should come back to the activity along with the changes.
-                                Intent intent = new Intent(MainActivity2.this, MainActivity2.class);
-                                startActivity(intent);
+                                dialog.dismiss();
+//                                Intent intent = new Intent(MainActivity2.this, MainActivity2.class);
+//                                startActivity(intent);
                             }
                         });
                 AlertDialog dialog = builder1.create();

@@ -71,9 +71,9 @@ public class MainActivity extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View viewClicked, int position, long id) {
-                TextView textview= (TextView) viewClicked;
-                String message= "You clicked # "+ position + ", which is string: "+ textview.getText().toString();
-                Toast.makeText(MainActivity.this,message,Toast.LENGTH_LONG).show();
+                //TextView textview= (TextView) viewClicked;
+                //String message= "You clicked # "+ position + ", which is string: "+ textview.getText().toString();
+                //Toast.makeText(MainActivity.this,message,Toast.LENGTH_LONG).show();
                 Intent intent = MainActivity2.makeIntent(MainActivity.this);
                 intent.putExtra(MainActivity2.ACTION, MainActivity2.EDIT);
                 intent.putExtra(MainActivity2.INDEX,position);
